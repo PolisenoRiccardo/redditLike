@@ -8,7 +8,7 @@ import { Article } from './article.model'; //Non cancellare gli altri import
 })
 export class ArticleComponent implements OnInit {
   @Input() article: Article;
-  @HostBinding('attr.class') cssClass = 'card';
+  @HostBinding('attr.class') cssClass = 'card mt-4';
 
   constructor() {
     this.article = new Article('Angular 2','http://angular.io',10);
@@ -25,4 +25,7 @@ export class ArticleComponent implements OnInit {
   }
 
   ngOnInit() {}
+
+  
 }
+
